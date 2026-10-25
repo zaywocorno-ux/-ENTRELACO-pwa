@@ -1,0 +1,23 @@
+ENTRELAÇO — pacote PWA inicial
+
+O QUE É
+Este pacote prepara o protótipo HTML existente para ser instalável como aplicativo web (PWA) no Android e adiciona cache básico para abrir a interface offline após a primeira visita online.
+
+IMPORTANTE
+- Ainda é um protótipo local: não tem contas reais, banco online compartilhado, login Google real, pagamento real ou mapa geográfico integrado.
+- Os dados de demonstração são salvos no armazenamento local do navegador deste dispositivo.
+- O preço de R$ 19,99 é uma regra visual/demonstrativa; ainda não existe cobrança.
+- Para instalar como PWA, o site precisa estar publicado em HTTPS. Abrir o arquivo HTML diretamente não basta para registrar o service worker.
+- Não publique segredos, senhas, tokens ou chaves privadas no código do navegador.
+
+PRÓXIMO PASSO PELO ANDROID (sem custo inicial)
+1. Extraia o ZIP em uma pasta.
+2. Entre em https://github.com e crie uma conta, caso ainda não tenha.
+3. Crie um repositório novo chamado entrelaco-pwa. Para manter simples, pode ser público; não coloque dados pessoais ou credenciais nele.
+4. No repositório, use Add file / Upload files e envie os arquivos e a pasta icons extraídos. O arquivo index.html precisa ficar na raiz do repositório.
+5. Abra Settings > Pages. Em Build and deployment, escolha Deploy from a branch, branch main e folder /(root), e salve.
+6. Aguarde o endereço HTTPS indicado pelo GitHub Pages.
+7. Abra esse endereço no Chrome do Android. No menu ⋮, escolha “Instalar app” ou “Adicionar à tela inicial”. O nome da opção pode variar.
+
+SEGURANÇA E LIMITES
+O GitHub Pages hospeda arquivos estáticos; ele não cria backend nem protege dados de usuários. Não use o protótipo para receber pagamentos ou armazenar dados reais sensíveis. A próxima fase será integrar autenticação e banco remoto com políticas de acesso (por exemplo, Supabase), sem expor chaves privadas.
